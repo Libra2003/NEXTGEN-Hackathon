@@ -1,12 +1,7 @@
 from clarifai.client.model import Model
 import streamlit as st
-from langchain.document_loaders import PyPDFLoader
-from langchain.text_splitter import CharacterTextSplitter
 import os
-from langchain.vectorstores import Clarifai
-from langchain.chains import RetrievalQA
-from clarifai.modules.css import ClarifaiStreamlitCSS
-from PyPDF2 import PdfReader 
+from pypdf import PdfReader 
 
 
 def text_extractor(upladed_file):
